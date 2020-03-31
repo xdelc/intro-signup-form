@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/xdelc/intro-signup-form#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "tailwindcss": "^1.2.0"
   }
 }
