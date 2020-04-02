@@ -1,10 +1,14 @@
+html {
+	font-size: 62.5%;
+}
+
 :root {
 	--primary-red: hsl(0, 100%, 74%);
 	--primary-green: hsl(154, 59%, 51%);
 	--accent-blue: hsl(248, 32%, 49%);
 	--neutral-darkblue: hsl(249, 10%, 26%);
 	--neutral-grayishblue: hsl(246, 25%, 77);
-	--fontsize: 1rem;
+	--fontsize: 1.75rem;
 	--font-family: 'Poppins', sans-serif;
 } 
 
@@ -23,10 +27,14 @@ body {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 5rem;
 	color: white;
 	line-height: 110%;
-	margin-bottom: 2rem;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: var(--fontsize);
 }
 
 .masthead {
@@ -44,7 +52,7 @@ h1 {
 
 .form-styling {
 	display: block;
-	width: 88%;
+	width: 100%;
 	height: calc(1.5em + 0.75rem + 2px);
 	font-size: 13px;
 	font-weight: 600;
@@ -55,9 +63,9 @@ h1 {
 	border: 1px solid #ced4da;
 	border-radius: 0.25rem;
 	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	margin: 1rem 0;
+	margin: 20px 0;
 	letter-spacing: 0.5px;
-	padding: 1.5rem 1.5rem;
+	padding: 25px;
 }
 
 .btn-lg {
@@ -74,6 +82,14 @@ h1 {
 	border: 1px solid #f5f5f5;
 	box-shadow: 0px 8px 0 rgba(0,0,0,0.1);
 	border-radius: 15px;
+}
+
+#summary div {
+	margin-right: 5px;
+}
+
+#form div {
+	margin-left: 5px;
 }
 
 #subscribe {
@@ -109,6 +125,84 @@ h1 {
 	color: var(--primary-red);
 	font-weight: 600;
 }
+
+/* iPhone */
+@media (min-width: 375px) and (max-width: 960px) {
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		margin-top: 100px;
+	}
+	p {
+		font-size: 1.7rem;
+		text-align: center;
+	}
+	.masthead {
+		display: flex;
+		align-items: center;
+		background-color: var(--primary-red);
+		background-image: url("../images/bg-intro-mobile.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		height: 100vh;
+	}
+	
+	
+	.form-styling {
+		display: block;
+		width: 100%;
+		height: calc(1.5em + 0.75rem + 2px);
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 1.5;
+		color: black;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 1px solid #ced4da;
+		border-radius: 0.25rem;
+		transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+		margin: 20px 0;
+		letter-spacing: 0.5px;
+		padding: 25px;
+	}
+	
+	#text {
+		width: 250px;	
+		text-align: center;
+		display: inline-block;
+	}
+	
+	#form {
+		margin-top: 70px;
+	}
+	
+	#subscribe {
+		color: white;
+		font-size: 1.7rem;
+		background-color: var(--accent-blue);
+		padding: 20px;
+		border: 1px solid hsl(248, 22%, 49%);
+		box-shadow: 0px 5px 0 rgba(0,0,0,0.1);
+		border-radius: 10px;
+		text-align: center;
+	}
+	
+	#free-trial {
+		background-color: var(--primary-green); 
+		text-transform: uppercase; 
+		color: white;
+		font-size: 1.7rem;
+		letter-spacing: 1px;
+		font-weight: 500;
+		padding: 15px;
+		border: 1px solid hsl(154, 42%, 51%);
+		box-shadow: 0px 3px 0 rgba(78,183,137);
+		border-radius: 10px;
+	}
+}
+
 
 
 

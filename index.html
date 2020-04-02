@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Intro Signup Form</title>
 	<!-- CSS stylesheet --> 
 	<link href="/public/css/styles.css" rel="stylesheet">
@@ -14,23 +15,29 @@
 <body>
 	<div class="masthead">
 		<div class="container">
-			<div class="row">
-				<div class="col-xl-6 col-xs-12" style="margin-top: 3rem">
-					<h1>Learn to code by watching others</h1>
-					<p style="color: white">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is inevitable.</p>
+			<div class="row align-items-center">
+				<div id="summary" class="col-md-12 col-lg-6 col-xl-6">
+					<div>
+						<h1>Learn to code by watching others</h1>
+						<p style="color: white">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is inevitable.</p>
+					</div>
 				</div> 
-				<div class="col-xl-6 col-xs-12 my-auto">
-					<button id="subscribe" class="btn btn-lg btn-block" type="submit"><span style="font-weight: 500">Try it free 7 days</span> <span style="font-weight: 300">then $20/mo. thereafter</span></button>
-					<form action="/" class="form-signin" method="POST">
-						<div class="box">
-							<input type="text" name="fName" class="form-styling" placeholder="First Name">
-							<input type="text" name="lName" class="form-styling" placeholder="Last Name">
-							<input type="email" name="email" class="form-styling" placeholder="E-Mail Address">
-							<input type="password" name="pwd" class="form-styling" placeholder="Password">
-							<button id="free-trial" class="btn btn-lg btn-block" type="submit">CLAIM YOUR FREE TRIAL</button>
-							<p id="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-						</div>
-					</form>
+				<div id="form" class="col-md-12 col-lg-6 col-xl-6">
+					<div>
+						<button id="subscribe" class="btn btn-lg btn-block" type="submit">
+							<div id="text"><span style="font-weight: 500">Try it free 7 days</span> <span style="font-weight: 300">then $20/mo. thereafter</span></div>
+						</button>
+						<form action="/" class="form-signin">
+							<div class="box">
+								<input type="text" name="fName" class="form-styling" placeholder="First Name">
+								<input type="text" name="lName" class="form-styling" placeholder="Last Name">
+								<input type="email" name="email" class="form-styling" placeholder="E-Mail Address">
+								<input type="password" name="pwd" class="form-styling" placeholder="Password">
+								<button id="free-trial" class="btn btn-lg btn-block" type="submit">CLAIM YOUR FREE TRIAL</button>
+								<p id="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
