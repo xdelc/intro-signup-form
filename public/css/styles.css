@@ -115,12 +115,21 @@ p {
 	border-radius: 10px;
 }
 
+#free-trial:hover {
+	background-color: hsl(154, 69%, 51%);
+}
+
+#free-trial:focus {
+	box-shadow: none; 
+}
+
 #terms{
 	color: #C8C8C8;
 	font-size: 12px;
 	margin-top: 20px;
 	text-align: center;
 }
+
 #terms span{ 
 	color: var(--primary-red);
 	font-weight: 600;
@@ -204,6 +213,29 @@ p {
 }
 
 
+/* Styling for error message */ 
+.border-error { 
+	border: 2px solid var(--primary-red); 
+}
 
+/* error message will not be visible until an error occurs */
+.error {
+	display: none; 
+}
 
+.error-bg {
+	background-image: url("../images/icon-error.svg");
+	background-position-x: 95%;
+	background-position-y: center;
+	background-repeat: no-repeat;	
+}
+
+.error-text {
+	color: var(--primary-red);
+	display: block;
+	font-size: 10px;
+	text-align: right;
+	font-style: italic;
+	margin-top: -15px;
+}
 

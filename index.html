@@ -1,3 +1,10 @@
+<!-- 
+	NOTES: 
+	- form.control 
+	- when I click on another part of the screen the button goes back to normal
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +18,12 @@
 	<link href="/public/css/bootstrap.css" rel="stylesheet">
 	<!-- Bootstrap Grid --> 
 	<link href="/public/css/bootstrap-grid.css" rel="stylesheet">
+	<!-- Javascript File -->
+	<script defer src="/public/js/app.js"></script>
+	<script defer
+	src="https://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
 </head>
 <body>
 	<div class="masthead">
@@ -19,7 +32,7 @@
 				<div id="summary" class="col-md-12 col-lg-6 col-xl-6">
 					<div>
 						<h1>Learn to code by watching others</h1>
-						<p style="color: white">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is inevitable.</p>
+						<p style="color: white">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
 					</div>
 				</div> 
 				<div id="form" class="col-md-12 col-lg-6 col-xl-6">
@@ -27,12 +40,20 @@
 						<button id="subscribe" class="btn btn-lg btn-block" type="submit">
 							<div id="text"><span style="font-weight: 500">Try it free 7 days</span> <span style="font-weight: 300">then $20/mo. thereafter</span></div>
 						</button>
-						<form action="/" class="form-signin">
+						<form action="/" name="sign-up-form" onsubmit="return formValidation()" novalidate>
 							<div class="box">
-								<input type="text" name="fName" class="form-styling" placeholder="First Name">
-								<input type="text" name="lName" class="form-styling" placeholder="Last Name">
-								<input type="email" name="email" class="form-styling" placeholder="E-Mail Address">
-								<input type="password" name="pwd" class="form-styling" placeholder="Password">
+
+								<input type="text" id="fName" name="first-name-error" class="form-styling" placeholder="First Name">
+								<p id="first-name-error" class="error">First Name cannot be empty</p>
+
+								<input type="text"  id="lName" name="last-name-error" class="form-styling" placeholder="Last Name">
+								<p id="last-name-error" class="error">Last Name cannot be empty</p>
+
+								<input type="email" id="email" name="email-error" class="form-styling" placeholder="E-Mail Address">
+								<p id="email-error" class="error">Looks like this is not an e-mail</p>
+
+								<input type="password" id="pwd" name="pwd-error" class="form-styling" placeholder="Password">
+								<p id="pwd-error" class="error">Password cannot be empty</p>
 								<button id="free-trial" class="btn btn-lg btn-block" type="submit">CLAIM YOUR FREE TRIAL</button>
 								<p id="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
 							</div>
