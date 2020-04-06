@@ -31,12 +31,12 @@ function formValidation() {
         count++;
     }
 
-    // if (count > 0) {
-    //     $(".form-control").on("input", function(e) {
-    //       $(e.target).removeClass("border-red");
-    //       $("#" + e.target.name).removeClass("error-text");
-    //     });
-    //   }
+    if (count > 0) {
+        $(".form-styling").on("input", function(e) {
+          $(e.target).removeClass("border-red");
+          $("#" + e.target.name).removeClass("error-text");
+        });
+      }
 
     if(count > 0) {
         return false;

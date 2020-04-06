@@ -1,3 +1,7 @@
+body {
+	font-family: var(--font-family);
+}
+
 html {
 	font-size: 62.5%;
 }
@@ -22,10 +26,6 @@ html {
 	vertical-align: baseline;
 }
 
-body {
-	font-family: var(--font-family);
-}
-
 h1 {
 	font-size: 5rem;
 	color: white;
@@ -35,6 +35,41 @@ h1 {
 
 p {
 	font-size: var(--fontsize);
+}
+
+.box {
+	background-color: white;
+	border-radius: 5px;
+	padding: 0 35px;
+	padding-top: 25px;
+	padding-bottom: 40px;
+	margin-top: 20px;
+	border: 1px solid #f5f5f5;
+	box-shadow: 0px 8px 0 rgba(0,0,0,0.1);
+	border-radius: 15px;
+}
+
+.form-styling {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + 0.75rem + 2px);
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.5;
+	color: hsl(249, 10%, 26%);
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: 0.25rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	margin: 20px 0;
+	letter-spacing: 0.5px;
+	padding: 25px;
+}
+
+.form-styling:focus {
+	border-color: #000000;
+	box-shadow: none;
 }
 
 .masthead {
@@ -50,56 +85,8 @@ p {
 	height: 100vh;
 }
 
-.form-styling {
-	display: block;
-	width: 100%;
-	height: calc(1.5em + 0.75rem + 2px);
-	font-size: 13px;
-	font-weight: 600;
-	line-height: 1.5;
-	color: black;
-	background-color: #fff;
-	background-clip: padding-box;
-	border: 1px solid #ced4da;
-	border-radius: 0.25rem;
-	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-	margin: 20px 0;
-	letter-spacing: 0.5px;
-	padding: 25px;
-}
-
-.btn-lg {
-	width: 400px;
-}
-
-.box {
-	background-color: white;
-	border-radius: 5px;
-	padding: 0 35px;
-	padding-top: 25px;
-	padding-bottom: 40px;
-	margin-top: 20px;
-	border: 1px solid #f5f5f5;
-	box-shadow: 0px 8px 0 rgba(0,0,0,0.1);
-	border-radius: 15px;
-}
-
-#summary div {
-	margin-right: 5px;
-}
-
 #form div {
 	margin-left: 5px;
-}
-
-#subscribe {
-	color: white;
-	font-size: var(--fontsize);
-	background-color: var(--accent-blue);
-	padding: 15px;
-	border: 1px solid hsl(248, 22%, 49%);
-	box-shadow: 0px 5px 0 rgba(0,0,0,0.1);
-	border-radius: 10px;
 }
 
 #free-trial {
@@ -122,6 +109,22 @@ p {
 #free-trial:focus {
 	box-shadow: none; 
 }
+
+#subscribe {
+	color: white;
+	font-size: var(--fontsize);
+	background-color: var(--accent-blue);
+	padding: 15px;
+	border: 1px solid hsl(248, 22%, 49%);
+	box-shadow: 0px 5px 0 rgba(0,0,0,0.1);
+	border-radius: 10px;
+	text-align: center;
+}
+
+#summary div {
+	margin-right: 5px;
+}
+
 
 #terms{
 	color: #C8C8C8;
@@ -146,19 +149,7 @@ p {
 		font-size: 1.7rem;
 		text-align: center;
 	}
-	.masthead {
-		display: flex;
-		align-items: center;
-		background-color: var(--primary-red);
-		background-image: url("../images/bg-intro-mobile.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
-		background-size: cover;
-		height: 100vh;
-	}
-	
-	
+		
 	.form-styling {
 		display: block;
 		width: 100%;
@@ -176,28 +167,23 @@ p {
 		letter-spacing: 0.5px;
 		padding: 25px;
 	}
-	
-	#text {
-		width: 250px;	
-		text-align: center;
-		display: inline-block;
+
+	.masthead {
+		display: flex;
+		align-items: center;
+		background-color: var(--primary-red);
+		background-image: url("../images/bg-intro-mobile.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		height: 100vh;
 	}
-	
+
 	#form {
 		margin-top: 70px;
 	}
-	
-	#subscribe {
-		color: white;
-		font-size: 1.7rem;
-		background-color: var(--accent-blue);
-		padding: 20px;
-		border: 1px solid hsl(248, 22%, 49%);
-		box-shadow: 0px 5px 0 rgba(0,0,0,0.1);
-		border-radius: 10px;
-		text-align: center;
-	}
-	
+
 	#free-trial {
 		background-color: var(--primary-green); 
 		text-transform: uppercase; 
@@ -210,10 +196,27 @@ p {
 		box-shadow: 0px 3px 0 rgba(78,183,137);
 		border-radius: 10px;
 	}
+
+	#subscribe {
+		color: white;
+		font-size: 1.7rem;
+		background-color: var(--accent-blue);
+		padding: 20px;
+		border: 1px solid hsl(248, 22%, 49%);
+		box-shadow: 0px 5px 0 rgba(0,0,0,0.1);
+		border-radius: 10px;
+		text-align: center;
+	}
+		
+	#text {
+		width: 250px;	
+		text-align: center;
+		display: inline-block;
+	}	
 }
 
-
-/* Styling for error message */ 
+/********** THE FOLLOWING STYLES APPLY TO ERROR MESSAGES **********/
+/* styling for error message */ 
 .border-error { 
 	border: 2px solid var(--primary-red); 
 }
