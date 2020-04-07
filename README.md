@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sign Up Form :pencil2: 
 
 Sign up form uses CSS, HTML, and Javascript for several different uses.
@@ -18,4 +19,7 @@ Mobile Design            |  Mobile Design Active State
 
 
 
+=======
+# Sign-Up Form
+>>>>>>> f9702c28cedbae1ee6e01c9283bd5e79938efed3
 
